@@ -9,3 +9,36 @@
 
 
 
+string[] array1 = new string[5] {"AB33", "123", "12345", "Hello World!", "GiT"};
+string[] array2 = new string[array1.Length];
+void Selected(string[] array1, string[] array2)
+{
+    int count = 0;
+    
+    for (int i = 0; i < array1.Length; i++)
+    {
+    if(array1[i].Length <= 3)
+        {
+        array2[count] = array1[i];
+        count++;
+        }
+    }
+}
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+Console.WriteLine();
+Selected(array1, array2);
+
+Console.WriteLine("Первый массив:");
+PrintArray(array1);
+Console.WriteLine();
+
+Console.WriteLine("Второй массив с элементами не превышающие 3 знаков:");
+PrintArray(array2);
+Console.WriteLine();
