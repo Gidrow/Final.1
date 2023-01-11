@@ -9,7 +9,7 @@
 
 
 
-string[] array1 = new string[5] {"AB33", "123", "12345", "Hello World!", "GiT"};
+string[] array1 = new string[5] {"AB33", "12", "12345", "Hello World!", "GiT"};
 string[] array2 = new string[array1.Length];
 void Selected(string[] array1, string[] array2)
 {
